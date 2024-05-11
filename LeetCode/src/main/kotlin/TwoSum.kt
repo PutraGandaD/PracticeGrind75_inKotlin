@@ -5,7 +5,7 @@ fun twoSum(nums: IntArray, target: Int) : IntArray {
     nums.forEachIndexed { index, element ->
         val requiredNum = target - element
         if(hashMap.containsKey(requiredNum)) {
-            result = intArrayOf(hashMap.getValue(requiredNum), index)
+            result = intArrayOf(hashMap[requiredNum]!!, index)
         } else {
             hashMap[element] = index
         }
