@@ -12,10 +12,10 @@ fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
             tail!!.next = ListNode(l2.`val`) // set tail
             l2 = l2.next // update pointer of l2
         }
-        tail = tail!!.next // update pointer of tail to the last node of dummy nodes
+        tail = tail!!.next // update pointer of tail to the last node of merged nodes
     }
 
-    // handle condition if one of the listnodes is empty, then merge into the tail
+    // handle condition if one of the listnodes is empty, then merge
     if(l1 != null) {
         tail!!.next = ListNode(l1.`val`)
     } else if (l2 != null) {
