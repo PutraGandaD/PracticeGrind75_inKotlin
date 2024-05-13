@@ -11,6 +11,8 @@ fun isPalindrome(s: String) : Boolean  {
     return newStr == newStr.reversed()
 }
 
+// TODO : With two pointer
+
 fun main() {
     isPalindrome("A man, a plan, a canal: Panama")
 }
